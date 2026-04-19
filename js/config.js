@@ -124,8 +124,13 @@ const siteConfig = {
         { category: "cleaning", image: "https://i.postimg.cc/MXDkvBXS/IMG-20260415-WA0092.jpg", title: "عزل اسطح" },
         { category: "cleaning", image: "https://i.postimg.cc/2VcPxfQp/IMG-20260415-WA0048.jpg", title: "خدمات الفوم" },
         { category: "cleaning", image: "https://i.postimg.cc/hfyH0qLq/IMG-20260415-WA0046(1).jpg", title: "خدمات الفوم" },
+
+        <iframe width="100%" height="200"
+src="https://youtube.com/shorts/BjIVsIuF_Oc?si=iJ2nuarOtjTPlvpQ"
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen>
+</iframe>
         
-
-
     ]
 };
