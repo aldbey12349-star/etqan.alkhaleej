@@ -125,7 +125,7 @@ const siteConfig = {
     { category: "cleaning", image: "https://i.postimg.cc/2VcPxfQp/IMG-20260415-WA0048.jpg", title: "خدمات الفوم" },
 
     // هنا الفيديو الجديد
-{ category: "video", video: "https://youtu.be/33J-7UXru8Q?si=ha2IW-zWamnKL_D9", title: "فيديو توضيحي للخدمات" }
+{ category: "video", video: "https://streamable.com/j54k33", title: "فيديو توضيحي للخدمات" }
 ]
 
 };
