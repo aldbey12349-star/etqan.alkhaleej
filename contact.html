@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا | شركة إتقان الخليج</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        .info-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .info-card i {
+            font-size: 2rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .social-links a {
+            font-size: 2rem;
+            color: var(--primary-color);
+            transition: var(--transition);
+        }
+        .social-links a:hover {
+            color: var(--accent-color);
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="https://via.placeholder.com/150x50?text=Etqan+Logo" alt="إتقان الخليج" class="site-logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="gallery.html">معرض الأعمال</a></li>
+                <li><a href="consultation.html">حجز استشارة</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    </header>
+
+    <!-- Sidebar Mobile -->
+    <div class="sidebar">
+        <div class="close-sidebar" style="color: white; text-align: left; cursor: pointer; font-size: 1.5rem;"><i class="fas fa-times"></i></div>
+        <ul style="margin-top: 2rem;">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="about.html">من نحن</a></li>
+            <li><a href="gallery.html">معرض الأعمال</a></li>
+            <li><a href="consultation.html">حجز استشارة</a></li>
+            <li><a href="contact.html">تواصل معنا</a></li>
+        </ul>
+    </div>
+
+    <section class="hero" style="height: 30vh; background: var(--primary-color);">
+        <div class="hero-content">
+            <h1>تواصل معنا</h1>
+            <p>يسعدنا الرد على استفساراتكم على مدار الساعة</p>
+        </div>
+    </section>
+
+    <section style="padding: 5rem 5%;">
+        <div class="contact-info">
+            <div class="info-card">
+                <i class="fas fa-phone-alt"></i>
+                <h3>اتصل بنا</h3>
+                <p class="phone-link">+966579465223</p>
+            </div>
+            <div class="info-card">
+                <i class="fab fa-whatsapp"></i>
+                <h3>واتساب</h3>
+                <p class="whatsapp-link">+966579465223</p>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>موقعنا</h3>
+                <p>المملكة العربية السعودية</p>
+            </div>
+        </div>
+
+        <div class="form-container">
+            <h2 style="text-align: center; color: var(--primary-color); margin-bottom: 2rem;">أرسل لنا رسالة</h2>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label for="name">الاسم</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">الجوال</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="city">المدينة</label>
+                    <input type="text" id="city" required>
+                </div>
+                <div class="form-group">
+                    <label for="details">الرسالة</label>
+                    <textarea id="details" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">إرسال الرسالة عبر واتساب</button>
+            </form>
+        </div>
+
+        <div class="social-links">
+            <a href="https://www.instagram.com/itqan_al_khaleej?igsh=cThldDBnMWo5cDhw" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@itqan_al_khaleej?_r=1&_d=eh3480hdijfh68&sec_uid=MS4wLjABAAAAjot6C309rnanD3PlIHy1Gr5qzIu87PiedDBl_2mSI93xpNkcbUWgqNxEDGd0o822&share_author_id=7629693277961012242&sharer_language=ar&source=h5_m&u_code=f33d3k996mgj00&ug_btm=b8727,b0&social_share_type=4&utm_source=copy&sec_user_id=MS4wLjABAAAAjot6C309rnanD3PlIHy1Gr5qzIu87PiedDBl_2mSI93xpNkcbUWgqNxEDGd0o822&tt_from=copy&utm_medium=ios&utm_campaign=client_share&enable_checksum=1&user_id=7629693277961012242&share_link_id=A83E7DC2-0F86-4691-882D-5717DCA7CD5C&share_app_id=1233" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://snapchat.com/t/IPXe6DFq" target="_blank"><i class="fab fa-snapchat"></i></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4 class="company-name">إتقان الخليج</h4>
+                <p>الشركة الرائدة في الخدمات المنزلية بالمملكة العربية السعودية. جودة واتقان في كل تفصيلة.</p>
+            </div>
+            <div class="footer-col">
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="gallery.html">معرض الأعمال</a></li>
+                    <li><a href="consultation.html">حجز استشارة</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>تواصل معنا</h4>
+                <ul>
+                    <li><i class="fas fa-phone"></i> <span class="phone-link">+966579465223</span></li>
+                    <li><i class="fab fa-whatsapp"></i> <span class="whatsapp-link">+966579465223</span></li>
+                    <li><i class="fas fa-map-marker-alt"></i> المملكة العربية السعودية</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>رؤيتنا 2030</h4>
+                <p>نسعى لنكون الخيار الأول في قطاع الخدمات المنزلية تماشياً مع رؤية المملكة الطموحة.</p>
+            </div>
+        </div>
+        <div class="copyright">
+            جميع الحقوق محفوظة &copy; 2026 شركة إتقان الخليج للخدمات المنزلية
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <div class="floating-btns">
+        <a href="https://wa.me/966579465223" class="whatsapp-btn whatsapp-link" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="tel:+966579465223" class="call-btn phone-link"><i class="fas fa-phone-alt"></i></a>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

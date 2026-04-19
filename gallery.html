@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرض الأعمال | شركة إتقان الخليج</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .gallery-filter {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+        .filter-btn {
+            padding: 8px 20px;
+            border: 2px solid var(--primary-color);
+            background: transparent;
+            color: var(--primary-color);
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        .filter-btn.active, .filter-btn:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .gallery-item {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+            transition: var(--transition);
+        }
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 1rem;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="https://via.placeholder.com/150x50?text=Etqan+Logo" alt="إتقان الخليج" class="site-logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="gallery.html">معرض الأعمال</a></li>
+                <li><a href="consultation.html">حجز استشارة</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    </header>
+
+    <div class="sidebar">
+        <div class="close-sidebar" style="color: white; text-align: left; cursor: pointer; font-size: 1.5rem;"><i class="fas fa-times"></i></div>
+        <ul style="margin-top: 2rem;">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="about.html">من نحن</a></li>
+            <li><a href="gallery.html">معرض الأعمال</a></li>
+            <li><a href="consultation.html">حجز استشارة</a></li>
+            <li><a href="contact.html">تواصل معنا</a></li>
+        </ul>
+    </div>
+
+    <section class="hero" style="height: 30vh; background: var(--primary-color);">
+        <div class="hero-content">
+            <h1>معرض أعمالنا</h1>
+            <p>شاهد نتائج خدماتنا الاحترافية في مختلف أنحاء المملكة</p>
+        </div>
+    </section>
+
+    <section style="padding: 5rem 5%;">
+        <div class="gallery-filter">
+            <button class="filter-btn active" data-filter="all">معرض صور اعمالنا</button>
+            
+        </div>
+
+        <div class="gallery-grid" id="galleryContainer">
+            <!-- سيتم تحميل الصور من config.js -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4 class="company-name">إتقان الخليج</h4>
+                <p>الشركة الرائدة في الخدمات المنزلية بالمملكة العربية السعودية. جودة واتقان في كل تفصيلة.</p>
+            </div>
+            <div class="footer-col">
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="gallery.html">معرض الأعمال</a></li>
+                    <li><a href="consultation.html">حجز استشارة</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>تواصل معنا</h4>
+                <ul>
+                    <li><i class="fas fa-phone"></i> <span class="phone-link">+966579465223</span></li>
+                    <li><i class="fab fa-whatsapp"></i> <span class="whatsapp-link">+966579465223</span></li>
+                    <li><i class="fas fa-map-marker-alt"></i> المملكة العربية السعودية</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>رؤيتنا 2030</h4>
+                <p>نسعى لنكون الخيار الأول في قطاع الخدمات المنزلية تماشياً مع رؤية المملكة الطموحة.</p>
+            </div>
+        </div>
+        <div class="copyright">
+            جميع الحقوق محفوظة &copy; 2026 شركة إتقان الخليج للخدمات المنزلية
+        </div>
+    </footer>
+
+    <div class="floating-btns">
+        <a href="https://wa.me/966579465223" class="whatsapp-btn whatsapp-link" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="tel:+966579465223" class="call-btn phone-link"><i class="fas fa-phone-alt"></i></a>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('galleryContainer');
+            const filterBtns = document.querySelectorAll('.filter-btn');
+
+            function displayGallery(filter = 'all') {
+                const filtered = filter === 'all' 
+                    ? siteConfig.gallery 
+                    : siteConfig.gallery.filter(item => item.category === filter);
+
+                container.innerHTML = filtered.map(item => `
+                    <div class="gallery-item watermark" data-category="${item.category}">
+                        <img src="${item.image}" alt="${item.title}">
+                        <div class="gallery-overlay">
+                            <h4>${item.title}</h4>
+                        </div>
+                    </div>
+                `).join('');
+            }
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    displayGallery(btn.getAttribute('data-filter'));
+                });
+            });
+
+            displayGallery();
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

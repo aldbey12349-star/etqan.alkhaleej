@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شركة إتقان الخليج للخدمات المنزلية | الصفحة الرئيسية</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* إضافات جمالية خاصة بالصفحة الرئيسية */
+        .hero {
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        .stats-section {
+            display: flex;
+            justify-content: space-around;
+            background: var(--primary-color);
+            padding: 3rem 5%;
+            color: white;
+            text-align: center;
+        }
+        .stat-item i {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+        .stat-item h3 { font-size: 2rem; }
+        .map-title { text-align: center; margin-top: 4rem; color: var(--primary-color); }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="https://via.placeholder.com/150x50?text=Etqan+Logo" alt="إتقان الخليج" class="site-logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="services.html">خدماتنا</a></li>
+                <li><a href="gallery.html">معرض الأعمال</a></li>
+                <li><a href="consultation.html">حجز استشارة</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    </header>
+
+    <!-- Sidebar Mobile -->
+    <div class="sidebar">
+        <div class="close-sidebar" style="color: white; text-align: left; cursor: pointer; font-size: 1.5rem;"><i class="fas fa-times"></i></div>
+        <ul style="margin-top: 2rem;">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="about.html">من نحن</a></li>
+            <li><a href="services.html">خدماتنا</a></li>
+            <li><a href="gallery.html">معرض الأعمال</a></li>
+            <li><a href="consultation.html">حجز استشارة</a></li>
+            <li><a href="contact.html">تواصل معنا</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="company-name">شركة إتقان الخليج للخدمات المنزلية</h1>
+            <p>الجودة، الالتزام، والسرعة في التنفيذ.. شريككم الموثوق لجميع الخدمات المنزلية في المملكة العربية السعودية.</p>
+            <div style="display: flex; gap: 15px; justify-content: center;">
+                <a href="#services" class="btn">اطلب الخدمة الآن</a>
+                <a href="consultation.html" class="btn" style="background: white; color: var(--primary-color);">حجز استشارة</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats-section">
+        <div class="stat-item">
+            <i class="fas fa-users"></i>
+            <h3>+2100</h3>
+            <p>عميل سعيد</p>
+        </div>
+        <div class="stat-item">
+            <i class="fas fa-check-circle"></i>
+            <h3>100%</h3>
+            <p>ضمان الجودة</p>
+        </div>
+        <div class="stat-item">
+            <i class="fas fa-calendar-check"></i>
+            <h3>+7</h3>
+            <p>سنوات خبرة</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="section-title">
+            <h2>خدماتنا <span>الاحترافية</span></h2>
+            <p>نقدم باقة متكاملة من الخدمات المنزلية بأعلى المعايير</p>
+        </div>
+        <div class="services-grid">
+            <!-- سيتم تحميل الخدمات ديناميكياً من config.js -->
+        </div>
+    </section>
+
+    <!-- Saudi Map Section -->
+    <h2 class="map-title">نغطي كافة أنحاء <span>المملكة العربية السعودية</span></h2>
+    <div class="map-container">
+        <!-- خريطة تفاعلية للمملكة -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7244.116525164413!2d46.6752957!3d24.7135517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d48939b%3A0x88a9d7d1016f099!2z2KfZhNix2YrYp9i2!5e0!3m2!1sar!2ssa!4v1690000000000!5m2!1sar!2ssa" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <!-- Floating Buttons -->
+    <div class="floating-btns">
+        <a href="https://wa.me/966579465223" class="whatsapp-btn whatsapp-link" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="tel:+966579465223" class="call-btn phone-link"><i class="fas fa-phone-alt"></i></a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4 class="company-name">إتقان الخليج</h4>
+                <p>الشركة الرائدة في الخدمات المنزلية بالمملكة العربية السعودية. جودة واتقان في كل تفصيلة.</p>
+                <div class="social-links" style="display: flex; gap: 15px; margin-top: 15px;">
+                    <a href="#" class="insta-link" style="color: white; font-size: 1.5rem;"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="tiktok-link" style="color: white; font-size: 1.5rem;"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" class="snap-link" style="color: white; font-size: 1.5rem;"><i class="fab fa-snapchat"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="gallery.html">معرض الأعمال</a></li>
+                    <li><a href="consultation.html">حجز استشارة</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>تواصل معنا</h4>
+                <ul>
+                    <li><i class="fas fa-phone"></i> <span class="phone-link">+966579465223</span></li>
+                    <li><i class="fab fa-whatsapp"></i> <span class="whatsapp-link">+966579465223</span></li>
+                    <li><i class="fas fa-map-marker-alt"></i> المملكة العربية السعودية</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>رؤيتنا 2030</h4>
+                <p>نسعى لنكون الخيار الأول في قطاع الخدمات المنزلية تماشياً مع رؤية المملكة الطموحة.</p>
+            </div>
+        </div>
+        <div class="copyright">
+            جميع الحقوق محفوظة &copy; 2026 شركة إتقان الخليج للخدمات المنزلية
+        </div>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
