@@ -125,9 +125,9 @@ const siteConfig = {
     { category: "cleaning", image: "https://i.postimg.cc/2VcPxfQp/IMG-20260415-WA0048.jpg", title: "خدمات الفوم" },
 
     // هنا الفيديو الجديد
-{ category: "video", video: "https://streamable.com/j54k33", title: "فيديو توضيحي للخدمات" },
+{ category: "video", video: "https://streamable.com/j54k33", title: "تشطيبات اعمال السباكه" },
      { category: "video", video: "https://streamable.com/f64mxa", title: "فيديو توضيحي للخدمات" },
-         { category: "video", video: "https://streamable.com/mtmjvm", title: "فيديو توضيحي للخدمات" },
+         { category: "video", video: "https://streamable.com/mtmjvm", title: "كشف تسريبات مسبح" },
 
 ]
 
