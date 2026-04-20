@@ -381,5 +381,11 @@ footer {
   padding: 10px;
   text-align: center;
 }
+.logo img {
+  width: 120px;          /* أو أي مقاس يناسبك */
+  height: 120px;         /* لازم يكون نفس العرض علشان يطلع دائري */
+  border-radius: 50%;    /* دي أهم حاجة علشان تخلي الصورة مدوّرة */
+  object-fit: cover;     /* يضمن إن الصورة تملأ الدائرة بشكل متناسق */
+}
 
 
