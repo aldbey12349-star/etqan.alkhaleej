@@ -44,7 +44,7 @@ const siteConfig = {
         {
             id: "pest-control",
             name: "تمديدات الغاز ",
-            description: "إبادة تامة لجميع أنواع تمدبدات الغاز آمنة وفعالة.",
+            description: "تنفيذ وتمديد شبكات الغاز بطريقة آمنة وفق أعلى معايير السلامة.",
             image1: "https://i.postimg.cc/RNsjTzc2/IMG-20260415-WA0051(1).jpg",
             image2: "https://i.postimg.cc/PP3BMkmB/IMG-20260415-WA0050(1).jpg",
             features: [" آمنة", "ضمان إبادة", "متابعة دورية"]
